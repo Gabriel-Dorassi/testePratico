@@ -9,5 +9,4 @@ public class TesteSummitOficialApplication {
     public static void main(String[] args) {
         SpringApplication.run(TesteSummitOficialApplication.class, args);
     }
-
 }
