@@ -1,10 +1,13 @@
+# API GitHub
 
-API GitHub
+## Descrição
 
-Esta é uma API Spring Java que se conecta à API do GitHub e exibe informações sobre os repositórios públicos de um determinado usuário. A API é capaz de receber o nome de usuário do GitHub como entrada e retorna os seguintes detalhes sobre os repositórios desse usuário:
-/respositories/{username}
+Esta é uma API Spring Java que se conecta à API do GitHub e exibe informações sobre os repositórios públicos de um
+determinado usuário. A API é capaz de receber o nome de usuário do GitHub como entrada e retorna os seguintes detalhes
+sobre os repositórios desse usuário:
+`/respositories/{username}`
 
-Parâmetros de URL
+### Parâmetros de URL
 
     {username}: O nome de usuário do GitHub para obter informações dos repositórios.
 
@@ -16,8 +19,22 @@ A resposta contém uma lista de objetos de repositório, cada um contendo as seg
     stars: O número de estrelas do repositório.
     language: A linguagem principal do repositório.
 
-Exemplo de Uso
+## Exemplo de Uso
 
- GET http://localhost:8080/repositories/Gabriel-Dorassi
+    GET http://localhost:8080/repositories/Gabriel-Dorassi
 
-Esta é uma API simples que fornece informações básicas sobre os repositórios públicos de um usuário do GitHub. 
+## Dependências
+
+- Java 17
+- Spring Boot
+- Maven
+
+## Como executar
+
+Compile o código usando maven e java 17:
+
+    mvn clean install
+
+Usando o jar gerado:
+
+    java -jar target/teste-summit-oficial-0.0.1-SNAPSHOT.jar
